@@ -45,6 +45,7 @@ int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struc
  * 表示监听范围包含7描述符，描述符因为是从0算起的，所以监听范围所包含的描述符为0、1、 2、 3、 4、 5、 6
 
 > 疑问：集合中只包含了0、3、6三个，但是为什么需要监听的有这么多，只能说人家select机制就是这么实现的，这个没办法
+![无奈](https://note.youdao.com/yws/api/personal/file/48EF191800634C738F7023E63711850E?method=download&shareKey=d2d24057b39d5de74662df3f031506f0)
 ##### readfds、writefds、exceptfds：读、写、异常集合
 * readfds：读结合，放读会阻塞的文件描述符
 * writefds：写集合，放写会阻塞的描述符。
