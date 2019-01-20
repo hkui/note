@@ -11,10 +11,29 @@ namespace code\oop\designPattern\factory\simpleFactory;
 
 class payFactory
 {
-    public static function createPay()
+    public static function createPayWeixin()
     {
-        return new pay();
+        return new payWeixin();
 
+    }
+    public static function createPayAli(){
+        return new payAli();
+    }
+
+    public static function createPayByType($type){
+       switch ($type){
+           case 1:
+                $pay= new payWeixin();
+                break;
+           case 2:
+                $pay= new payAli();
+                break;
+           default:
+               throw new \InvalidArgumentException("暂不支持的支付方式");
+
+
+       }
+        return $pay;
     }
 
 }
