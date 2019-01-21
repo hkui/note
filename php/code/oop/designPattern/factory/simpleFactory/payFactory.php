@@ -21,18 +21,18 @@ class payFactory
     }
 
     public static function createPayByType($type){
-       switch ($type){
-           case 1:
+        switch ($type){
+            case 1:
                 $pay= new payWeixin();
                 break;
-           case 2:
+            case 2:
                 $pay= new payAli();
                 break;
-           default:
-               throw new \InvalidArgumentException("Ôİ²»Ö§³ÖµÄÖ§¸¶·½Ê½");
+            default:
+                throw new \InvalidArgumentException("æš‚ä¸æ”¯æŒçš„æ”¯ä»˜æ–¹å¼");
 
 
-       }
+        }
         return $pay;
     }
 
