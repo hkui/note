@@ -11,5 +11,8 @@ namespace code\oop\designPattern\factory\factoryMethod;
 
 class PayWeixinFactory extends  PayFactory
 {
-
+    public function createPay()
+    {
+        return new PayWeixin();
+    }
 }
