@@ -9,7 +9,7 @@
 namespace code\oop\designPattern\factory\simpleFactory;
 
 
-class payAli implements payInterface
+class PayAli implements payInterface
 {
     public function undefinder(){
 

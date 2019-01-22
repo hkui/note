@@ -10,8 +10,8 @@ require dirname(__FILE__).'/../../../../init.php';
 
 
 //多处调用的情况下如果将来要改,比如把payWexin改名或者修改传入的参数，会改很多地方，难以维护
-$payWeixin=new payWeixin();
-$payAli=new payAli();
+$payWeixin=new PayWeixin();
+$payAli=new PayAli();
 
 
 //统一获取

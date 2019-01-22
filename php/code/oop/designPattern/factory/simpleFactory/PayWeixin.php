@@ -9,7 +9,7 @@
 namespace code\oop\designPattern\factory\simpleFactory;
 
 
-class payWeixin implements  payInterface
+class PayWeixin implements  payInterface
 {
     public function undefinder(){
 
