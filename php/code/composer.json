@@ -1,5 +1,10 @@
 {
     "require": {
         "composer/composer": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "code\\":"./"
+        }
     }
 }
