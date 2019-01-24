@@ -31,6 +31,7 @@ class ComposerStaticInit800a0f92c8c70b92ce3f513b3d584970
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PhpAmqpLib\\' => 11,
         ),
         'J' => 
         array (
@@ -90,6 +91,10 @@ class ComposerStaticInit800a0f92c8c70b92ce3f513b3d584970
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
         'JsonSchema\\' => 
         array (
