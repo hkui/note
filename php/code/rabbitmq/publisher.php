@@ -40,11 +40,11 @@ $r1=$channel->exchange_declare($exchange, 'direct', false, true, false);
 
 $channel->queue_bind($queue, $exchange);
 
-$messageBody = implode(' ', array_slice($argv, 1));
 
-$message = new AMQPMessage($messageBody,
-    ['content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT]
-);
+$messageBody = implode(' ', array_slice($argv, 1))."-->".date("Y-m-d H:i:s");
+
+$message = new AMQPMessage($messageBody, array('content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT));
+
 $channel->basic_publish($message, $exchange);
 
 $channel->close();
