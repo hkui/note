@@ -7,7 +7,6 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 $exchange = 'router';
 $queue = 'msgs';
-
 $connection = new AMQPStreamConnection(HOST, PORT, USER, PASS, VHOST);
 $channel = $connection->channel();
 
@@ -24,7 +23,9 @@ $channel = $connection->channel();
     exclusive: false // the queue can be accessed in other channels
     auto_delete: false //the queue won't be deleted once the channel is closed.
 */
-$channel->queue_declare($queue, false, true, false, false);
+$r=$channel->queue_declare($queue, false, true, false, false);
+print_r($r);
+return;
 
 /*
     name: $exchange
@@ -34,12 +35,16 @@ $channel->queue_declare($queue, false, true, false, false);
     auto_delete: false //the exchange won't be deleted once the channel is closed.
 */
 
-$channel->exchange_declare($exchange, 'direct', false, true, false);
+$r1=$channel->exchange_declare($exchange, 'direct', false, true, false);
+
 
 $channel->queue_bind($queue, $exchange);
 
 $messageBody = implode(' ', array_slice($argv, 1));
-$message = new AMQPMessage($messageBody, array('content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT));
+
+$message = new AMQPMessage($messageBody,
+    ['content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT]
+);
 $channel->basic_publish($message, $exchange);
 
 $channel->close();
