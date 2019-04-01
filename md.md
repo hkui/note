@@ -21,7 +21,7 @@ name|age|分数
 小k|22|98
 晓东|25|100
 
-##### 流程图github不支持 时序图github也不支持
+##### 流程图github不支持 时序图github也不支持 test
 
 
 ### Todo list
