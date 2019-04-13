@@ -52,9 +52,9 @@
 
     - [x] [21.线程控制函数](https://github.com/hkui/note/blob/master/linuxc/21.%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%87%BD%E6%95%B0.md)
 
-    - [ ] 22.线程资源保护
+    - [x] [22.线程资源保护之互斥锁](<https://github.com/hkui/note/blob/master/linuxc/22.%E7%BA%BF%E7%A8%8B%E7%9A%84%E8%B5%84%E6%BA%90%E4%BF%9D%E6%8A%A4.md>)
 
-    - [ ] 23.线程信号量
+    - [ ] 23.线程资源保护之线程信号量
 
     - [ ] 24.条件变量
 
@@ -73,7 +73,7 @@
       
 
       
-        
+      
 
 + 网络
     + [man](https://github.com/hkui/note/blob/master/linuxc/00.linux%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%9F%BA%E6%9C%AC.md)
