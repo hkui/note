@@ -54,7 +54,7 @@
 
     - [x] [22.线程资源保护之互斥锁](<https://github.com/hkui/note/blob/master/linuxc/22.%E7%BA%BF%E7%A8%8B%E7%9A%84%E8%B5%84%E6%BA%90%E4%BF%9D%E6%8A%A4.md>)
 
-    - [ ] 23.线程资源保护之线程信号量
+    - [x] [23.线程资源保护之线程信号量](https://github.com/hkui/note/blob/master/linuxc/23.%E7%BA%BF%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BF%9D%E6%8A%A4%E4%B9%8B%E7%BA%BF%E7%A8%8B%E4%BF%A1%E5%8F%B7%E9%87%8F.md)
 
     - [ ] 24.条件变量
 
