@@ -58,7 +58,7 @@
 
     - [x] [24.条件变量](<https://github.com/hkui/note/blob/master/linuxc/24.%E6%9D%A1%E4%BB%B6%E5%8F%98%E9%87%8F.md>)
 
-    - [ ] 25.高级IO之多进程,多线程阻塞读取键盘鼠标
+    - [x] [25.高级IO之非阻塞IO](<https://github.com/hkui/note/blob/master/linuxc/25.%E9%AB%98%E7%BA%A7IO%E4%B9%8B%E9%9D%9E%E9%98%BB%E5%A1%9EIO.md>)
 
     - [ ] 26.文件锁
 
