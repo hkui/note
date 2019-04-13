@@ -56,7 +56,7 @@
 
     - [x] [23.线程资源保护之线程信号量](https://github.com/hkui/note/blob/master/linuxc/23.%E7%BA%BF%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BF%9D%E6%8A%A4%E4%B9%8B%E7%BA%BF%E7%A8%8B%E4%BF%A1%E5%8F%B7%E9%87%8F.md)
 
-    - [ ] 24.条件变量
+    - [x] [24.条件变量](<https://github.com/hkui/note/blob/master/linuxc/24.%E6%9D%A1%E4%BB%B6%E5%8F%98%E9%87%8F.md>)
 
     - [ ] 25.高级IO之多进程,多线程阻塞读取键盘鼠标
 
