@@ -62,7 +62,7 @@
 
     - [x] [26.文件锁](<https://github.com/hkui/note/blob/master/linuxc/26.%E6%96%87%E4%BB%B6%E9%94%81.md>)
 
-    - [ ] 27.IO多路复用之select
+    - [x] [27.IO多路复用之select]([https://github.com/hkui/note/blob/master/linuxc/27.IO多路复用之select.md](https://github.com/hkui/note/blob/master/linuxc/27.IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B9%8Bselect.md)
 
     - [ ] 28.多路IO之poll
 
@@ -72,7 +72,6 @@
 
       
 
-      
       
 
 + 网络
