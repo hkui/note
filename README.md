@@ -60,7 +60,7 @@
 
     - [x] [25.高级IO之非阻塞IO](<https://github.com/hkui/note/blob/master/linuxc/25.%E9%AB%98%E7%BA%A7IO%E4%B9%8B%E9%9D%9E%E9%98%BB%E5%A1%9EIO.md>)
 
-    - [ ] 26.文件锁
+    - [x] [26.文件锁](<https://github.com/hkui/note/blob/master/linuxc/26.%E6%96%87%E4%BB%B6%E9%94%81.md>)
 
     - [ ] 27.IO多路复用之select
 
