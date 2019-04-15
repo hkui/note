@@ -66,7 +66,7 @@
 
     - [x] [28.多路IO之poll](https://github.com/hkui/note/blob/master/linuxc/28.%E5%A4%9A%E8%B7%AFIO%E4%B9%8Bpoll.md)
 
-    - [ ] 29.异步IO
+    - [x] [29.异步IO](<https://github.com/hkui/note/blob/master/linuxc/29.%E5%BC%82%E6%AD%A5IO.md>)
 
     - [ ] 30.高级IO之存储映射
 
