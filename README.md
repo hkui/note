@@ -1,11 +1,12 @@
 # PHP相关
 
 + 语言基础
-    - [x] [1.php基本](https://github.com/hkui/note/blob/master/php/php_base.md)
-    - [x] [2.php7新特性](https://github.com/hkui/note/blob/master/php/php7%E6%96%B0%E7%89%B9%E6%80%A7.md)
-    - [x] [3.php应用保护程序suhosin](https://github.com/hkui/note/blob/master/php/php-suhosin.md)
-    - [x] [4.trait](https://github.com/hkui/note/blob/master/php/trait.md)
-    - [ ] [5.php运行模式和底层原理](https://github.com/hkui/note/blob/master/php/php%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86.md)
+    - [x] [php基本](https://github.com/hkui/note/blob/master/php/php_base.md)
+    - [x] [php7新特性](https://github.com/hkui/note/blob/master/php/php7%E6%96%B0%E7%89%B9%E6%80%A7.md)
+    - [x] [php应用保护程序suhosin](https://github.com/hkui/note/blob/master/php/php-suhosin.md)
+    - [x] [trait](https://github.com/hkui/note/blob/master/php/trait.md)
+    - [x] [master-worker常驻型程序代码修改哪些需要重启master或者worker](https://github.com/hkui/note/blob/master/linuxc/04.master-worker%E5%B8%B8%E9%A9%BB%E5%9E%8B%E7%A8%8B%E5%BA%8F%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9%E5%93%AA%E4%BA%9B%E9%9C%80%E8%A6%81%E9%87%8D%E5%90%AFmaster%E6%88%96%E8%80%85worker.md)
+    - [ ] [php运行模式和底层原理](https://github.com/hkui/note/blob/master/php/php%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86.md)
 # linuxc
 * 网络编程基础
      - [x] [00.linux网络编程基本](https://github.com/hkui/note/blob/master/linuxc/00.linux%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%9F%BA%E6%9C%AC.md)
