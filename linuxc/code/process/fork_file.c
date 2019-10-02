@@ -1,3 +1,4 @@
+//父子进程分别打开 相同文件，各自不同的fd
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

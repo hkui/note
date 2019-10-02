@@ -1,3 +1,4 @@
+//多个进程处理任务 不带回收子进程
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>

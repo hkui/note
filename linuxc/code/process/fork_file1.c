@@ -1,3 +1,5 @@
+//父子进程共用同一个fd 对文件进行操作
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

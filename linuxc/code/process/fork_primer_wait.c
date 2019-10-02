@@ -1,4 +1,4 @@
-//带回收的fork_primer
+//多个进程处理任务  找质数 带回收的fork_primer
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -30,14 +30,15 @@ int main(){
                 }
             }
             if(mark){
-                printf("%d say %d is a primer\n",getpid(),i);
+                printf("%d say %d is  primer\n",getpid(),i);
             }
             exit(1);
         }
     }
 
-    for(i=0;i<(RIRHT-LEFT);i++){
-        wait(NULL);
+    for(i=LEFT;i<=RIRHT;i++){
+       pid= wait(NULL);
+       printf("waited %d\n",pid);
     }
    exit(1);
 }
