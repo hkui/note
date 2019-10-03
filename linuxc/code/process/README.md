@@ -15,5 +15,8 @@ exec/exec_son   exec_fork里fork后装载的子程序
 
 ```
 mysh.c  shell内部命令实现部分
+mysu    sudo
+daemon  守护
+
 ```
 

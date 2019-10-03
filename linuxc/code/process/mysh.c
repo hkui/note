@@ -6,9 +6,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-
-
-
 #define  DELIMS " \t\n"
 
 struct cmd_st{
