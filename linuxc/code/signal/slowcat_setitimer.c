@@ -6,21 +6,14 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <signal.h>
+#include <sys/time.h>
 
 #define CPS 10
 #define BUFSIZE CPS
-#define BURST 100
-//static volatile int token=0;  //gcc alarm.c -O1  优化时会到真正存储的地方取值
-static volatile sig_atomic_t token=0;  //信号原子类型，保证取值赋值一定是1条机器指令操作
+static volatile loop=1;  //gcc alarm.c -O1  优化时会到真正存储的地方取值
 
 static void alrm_handler(int signo){
-    if(token>BURST){
-        token=BURST;
-    }else{
-        token++;
-    }
-    alarm(1);
-
+    loop=1;
 }
 
 int main(int argc,char **argv){
@@ -28,7 +21,7 @@ int main(int argc,char **argv){
     int len,pos;
     size_t ret;
     char buf[BUFSIZE];
-
+    struct itimerval itv;
     if(argc<2){
        fprintf(stderr,"Usage:%s <src_file>\n",argv[0]);
        exit(1);
@@ -45,15 +38,22 @@ int main(int argc,char **argv){
     }while(sfd<0);
 
     signal(SIGALRM,alrm_handler);
-    alarm(1);
+
+    itv.it_interval.tv_sec=1;
+    itv.it_interval.tv_usec=0;
+    itv.it_value.tv_sec=1;
+    itv.it_value.tv_usec=0;
+
+    if(setitimer(ITIMER_REAL,&itv,NULL)<0){
+        perror("setitimer err");
+        exit(1);
+    }
 
     while(1){
-        //token大于0 就无需等待
-        while(token<=0){
-            pause();
+        while(!loop){
+            pause();//信号来了pause被打断，
         }
-        token--;
-        //当读的设备没数据时，令牌token一直在积攒，来数据了拿积攒的令牌桶 去读数据
+        loop=0;
         while((len=read(sfd,buf,BUFSIZE))<0){
             if(errno==EINTR){
                 continue;

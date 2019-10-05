@@ -25,9 +25,11 @@ signal/signal  信号基本
 signal/alarm
 signal/pause
 signal/slowcat  通过alarm 逐渐输出版本的cat，漏桶
+signal/slowcat_setitimer  通过setitimer 逐渐输出版本的cat，漏桶
 signal/slowcat2  令牌桶
-
 signal/mytbf  令牌桶封装
+signal/sigprocmask  信号屏蔽字操作
+signal/sigsuspend  信号驱动程序
 
 
 ```
