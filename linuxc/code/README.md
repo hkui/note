@@ -34,6 +34,12 @@ signal/sigsuspend  信号驱动程序
 signal/sigsuspend_mysig  实时信号驱动程序
 
 ```
+#### 线程
+```
+thread/create 线程的创建，回收
+thread/cleanup 线程退出时的清理 ( pthread_cleanup_push/pop)
+
+```
 
 
 
