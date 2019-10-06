@@ -8,7 +8,7 @@
 
 
 #define LEFT    30000000
-#define RIRHT   30000200
+#define RIGHT   30000200
 #define PROCESS_NUM 3 //进程数
 
 int main(){
@@ -24,7 +24,7 @@ int main(){
             exit(1);
         }
         if(0==pid){
-            for(i=LEFT+pn;i<=RIRHT;i+=PROCESS_NUM){
+            for(i=LEFT+pn;i<=RIGHT;i+=PROCESS_NUM){
                 mark=1;
                 for(j=2;j<i/2;j++){
                     if(i%j==0){

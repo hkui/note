@@ -8,14 +8,12 @@
 
 
 #define LEFT    30000000
-#define RIRHT   30000200
+#define RIGHT   30000200
 
 int main(){
     pid_t pid;
     int i,mark,j;
-    int status;
-    status=0;
-    for(i=LEFT;i<=RIRHT;i++){
+    for(i=LEFT;i<=RIGHT;i++){
         pid=fork();
         if(pid<0){
             perror("fork()");

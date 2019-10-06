@@ -38,6 +38,8 @@ signal/sigsuspend_mysig  实时信号驱动程序
 ```
 thread/create 线程的创建，回收
 thread/cleanup 线程退出时的清理 ( pthread_cleanup_push/pop)
+thread/thread_primer 多线程算质数的
+thread/fileAdd 多线程同时读写同一文件(没加线程互斥因素)
 
 ```
 

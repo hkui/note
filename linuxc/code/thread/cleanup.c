@@ -10,7 +10,6 @@ static void cleanup_func(void *p){
 
 static void *fun(void *p){
     puts("pthread runing");
-
     pthread_cleanup_push(cleanup_func,"cleanup1");
     pthread_cleanup_push(cleanup_func,"cleanup2");
     pthread_cleanup_push(cleanup_func,"cleanup3");
